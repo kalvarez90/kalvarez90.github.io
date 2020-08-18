@@ -1,0 +1,22 @@
+/*
+============================================
+; Title:  style.css
+; Author: Karina Alvarez
+; Date:   17 August 2020
+; Description: CSS for portfolio project
+;===========================================
+*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+font-weight: 300;
+  font-family: 'Josefin Sans', Arial, Verdana, sans-serif;
+}
+
+main {
+  width: 85%;
+  margin: 0 auto;
+}
