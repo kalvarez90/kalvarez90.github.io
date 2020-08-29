@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+<head>
 
     <title>Portfolio</title>
 
@@ -8,64 +8,224 @@
     <meta charset='UTF-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Karina Alvarez">
-    <meta name="robots" content="nofollow">
     <meta name="keywords" content="bellevue, portfolio, project" />
 
     <!-- Google fonts -->
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Raleway:wght@300;400;500&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Paytone+One&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- Font Awesome 4 - icons brand -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-    crossorigin="anonymous">
-    <link href="./style.css" type="text/css" rel="stylesheet" >
-  </head>
+    <!-- CSS File-->
+    <link href="style.css" type="text/css" rel="stylesheet">
 
-  <body>
+    <!-- W3.css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- JavaScript File-->
+    <script type="text/javascript" src="script.js"></script>
+
+  </head>
+<body>
 
     <!-- Navigation Bar -->
-    <nav>
-      <a href='#'>About</a>
-      <a href='#'>Projects</a>
-      <a href='#'>Skills</a>
-      <a href='#'>Contact</a>
-    </nav>
+    <div class="NavBar w3-top" id="navBar">
+  <div class="w3-bar w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button w3-disabled" title="More">MORE <i class="fa fa-caret-down"></i></button>
+   </div>
+  </div>
+</div>
 
-    <!-- Main Tag -->
-    <main>
-      <h1> Karina Alvarez' Portfolio </h1>
+<!-- Navbar on small screens -->
+<div class="NavBar" id="navBar">
+<div id="navB" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECT</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large  w3-disabled" onclick="myFunction()">DIAGRAMS</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large  w3-disabled" onclick="myFunction()">PROJECTS</a>
+</div>
+</div>
 
-      <!-- Start of Projects -->
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px" id="main">
+
+  <!-- HEADER -->
+  <div class="w3-center">
+         <img src="images/IMAGE4.png"
+         alt="fake image"
+         style="width:100%">
+    <div class="w3-display-middle w3-hide-small">
+      <h1 class="header">Karina Alvarez</h1>
+      <p class="headerPar"><b>Wife, Mother, Homeschooler, Pet Fostering Lover, Student, and Future Web Developer</b></p>
+    </div>
+  </div>
 
 
+  <!-- ABOUT ME SECTION -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide" id="aboutTitle"><b>ABOUT ME</b></h2>
+    <p class="w3-justify" id="aboutPar">I'm a stay-at-home mom of four children between the ages of 12 to 1 year.
+      We are a year-round homeschool family. I am currently a student working toward a Bachelors' in Web Development
+      at Bellevue University. I have learned HTML and CSS and now taking JavaScript and Node courses. I used to
+      work in a hospital as a Nursing Tech for about three before deciding to stay home when I got pregnant with our
+      second child. Since then, I've had work on and off as a Research Manager with a Dr at the hospital I used to work.
+      Now, I'm looking forward to completing my degree in web development at Bellevue University.</p>
+    <div class="w3-row w3-padding-32">
 
+      <div class="w3-third">
+        <img src="images/IMAGE1.png"
+         alt="fake image"
+         class="w3-round w3-margin-bottom"
+         width= "250"
+         />
+      <p>Image caption</p>
+      </div>
 
+      <div class="w3-third">
+         <img src="images/IMAGE1.png"
+         alt="fake image"
+         class="w3-round w3-margin-bottom"
+         width= "250"
+        />
+      <p>Image caption</p>
+      </div>
 
+      <div class="w3-third">
+        <img src="images/IMAGE1.png"
+         alt="fake image"
+         class="w3-round w3-margin-bottom"
+         width= "250"
+         />
+      <p>Image caption</p>
+      </div>
+    </div>
+  </div>
 
-      <!-- End of Projects -->
+  <!-- PROJECT SECTION -->
+  <div class="w3-blue-gray" id="project">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
 
-    </main>
+       <h2 class="w3-wide w3-center" id="projTitle"><b>PROJECTS</b></h2>
+      <p class="w3-opacity w3-center" id="projPar"><i>Repositories created while studying at Bellevue University</i></p><br>
 
-    <!-- Start of Footer-->
-    <footer>
-      <div class="container">
-        <div class="row">
-           <div class='col-sm-5'>
-            <p class="footer"> &#0169; 2020 by Karina Alvarez </p>
-           </div>
-           <div class='col-sm-5'>
-             <a href="https://github.com/kalvarez90"><i class="fa fa-github" aria-hidden="true"></i></a>
-             <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </div>
+     <div class="w3-row-padding w3-padding-32" style="margin:0 -16px" id="myProjects">
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/IMAGE1.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Biosite</b></p>
+            <p class="w3-opacity">WEB 200</p>
+            <p>First webpage I coded during WebDev BS</p>
+            <a class="w3-button w3-margin-bottom" href="https://kalvarez90.github.io/bioSite/" target="_blank">View Project</a>
           </div>
         </div>
-      </footer>
-      <!-- End of footer -->
 
-  </body>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/IMAGE1.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Biosite Prototype</b></p>
+            <p class="w3-opacity">WEB 200</p>
+            <p>Prototype of the first webpage I coded</p>
+            <a class="w3-button w3-margin-bottom"href="https://www.github.com/kalvarez90/bioSite" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/IMAGE1.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Personal Repository</b></p>
+            <p class="w3-opacity">WEB 201</p>
+            <p>Personal portfolio Repository</p>
+            <a class="w3-button w3-margin-bottom" href="https://www.github.com/kalvarez90/kalvarez90.github.io" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/IMAGE1.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Class Repository</b></p>
+            <p class="w3-opacity">WEB 231</p>
+            <p>Class repository created for web-231 - JavaScript I</p>
+            <a class="w3-button w3-margin-bottom" href="https://www.github.com/kalvarez90/web-231" target="_blank">View Project</a>
+        </div>
+        </div>
+
+
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/IMAGE1.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Class Repository</b></p>
+            <p class="w3-opacity">WEB 330</p>
+            <p>Class repository created for web-330 - JavaScript II</p>
+            <a class="w3-button w3-margin-bottom" href="https://www.github.com/kalvarez90/web-330" target="_blank">View Project</a>
+          </div>
+        </div>
+
+       <div class="w3-third w3-margin-bottom  w3-disabled">
+          <img src="images/IMAGE1.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b></b>Title</p>
+            <p class="w3-opacity">Definition</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae.</p>
+            <a class="w3-button w3-margin-bottom" href="" target="_blank">link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- CONTACT SECTION -->
+  <div class="w3-container w3-content" id="contact">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center" id="contactTitle"><b>CONTACT</b></h2>
+    <p class="w3-opacity w3-center" >Let's work together!</p>
+
+<div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker"></i> Kentucky, US<br>
+        <i class="fa fa-phone" ></i> Phone: (147) 369-7812<br>
+        <i class="fa fa-envelope"  > </i> Email: example@gmail.com<br>
+      </div>
+
+
+        <form class="w3-col m6 w3-large w3-margin-bottom" action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+         <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="First Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Last Name" required name="Last Name">
+            </div>
+          </div>
+        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        <p>
+        <textarea class="w3-input w3-border"id="subject" name="subject" placeholder="Message" required name="Email" ></textarea>
+       </p>
+        <input type="submit" value="Submit">
+      </form>
+</div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-center w3-light-grey w3-xlarge">
+<a href="https://github.com/kalvarez90"><i class="fa fa-github w3-hover-opacity"></i></a>
+<i class="fa fa-facebook-official w3-hover-opacity"></i>
+<i class="fa fa-instagram w3-hover-opacity"></i>
+<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+<i class="fa fa-twitter w3-hover-opacity"></i>
+  <p class="w3-medium" id="copyright">© 2020 Copyright: Karina Alvarez</p>
+</footer>
+
+</body>
 </html>
