@@ -8,51 +8,103 @@
 */
 body {
   background-color: rgba(245, 255, 255, 0.5);
- }
+}
 
- /* NAVBAR */
+/* NAVBAR */
 .NavBar {
-  font-family: 'Josefin Sans', Arial, Verdana, sans-serif;;
+  font-family: 'Josefin Sans', Arial, Verdana, sans-serif;
+  ;
   color: #e8e9f3;
 }
 
-#navBar {
+#navigation {
   background-color: #12130f;
 }
 
-
 /* HEADER */
-.header {
-  font-size: 5.5em;
+#header {
+  font-size: 6.5vw;
   font-family: 'Paytone One', Arial, Verdana, sans-serif;
+  padding-left: 30px;
 }
 
-.headerPar {
-  font-size: 1.2em;
-  font-family: 'Quicksand', Arial, Verdana, sans-serif;
+#picture {
+  opacity: 0.7;
+}
+
+#project {
+  background-color: rgba(91, 151, 154, 0.7);
 }
 
 /* SECTIONS OF PAGE CONTENT */
-#about, #aboutTitle, #project, #projTitle, #contact, #contactTitle, #copyright{
+#about,
+#aboutTitle,
+#project,
+#projTitle,
+#contact,
+#contactTitle,
+#copyright {
   font-family: 'Josefin Sans', Arial, Verdana, sans-serif;
 }
 
-#aboutTitle, #projTitle, #contactTitle{
+#aboutTitle,
+#projTitle,
+#contactTitle {
   font-size: 2.5em;
 }
 
-#aboutPar, #myProjects, #projPar{
+#aboutPar,
+#myProjects,
+#projPar {
   font-size: 1.2em;
 }
 
+/* READ MORE BUTTON */
+#myBtn {
+  font-size: small;
+}
+
+#more {
+  display: none;
+}
 
 /* CONTACT FORM*/
-
-
 input[type=submit] {
   background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+}
+
+/*======
+; TYPEWRITTER EFFECT
+; Author: W.S. Toh
+; Modified by: Karina Alvarez
+*/
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 2;
+  }
+}
+
+#cursor {
+  animation: blink 0.8s infinite;
+  font-size: xx-large;
+}
+
+#typewriterSub {
+  font-family: 'Quicksand', Arial, Verdana, sans-serif;
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  #cursor {
+    font-size: medium;
+  }
 }

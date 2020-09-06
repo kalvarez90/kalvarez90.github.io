@@ -1,13 +1,11 @@
 /*
 ============================================
 ; Title:  function-class.js
-; Author: W3School.com
 ; Date:   27 August 2020
-; Modified by: Karina Alvarez
+; Author: Karina Alvarez
 ; Description: JS for profile
 ;===========================================
 */
-
 
 // Responsive NavBar for smaller screens
 function myFunction() {
@@ -16,5 +14,74 @@ function myFunction() {
     x.className += " w3-show";
   } else {
     x.className = x.className.replace(" w3-show", "");
+  }
+};
+
+/*======
+; TYPEWRITTER EFFECT
+; Author: W.S. Toh
+; Modified by: Karina Alvarez
+*/
+
+var tw = {
+  container: "typewriterSub", // ID of typewriter container
+  text: [ // Blocks of text to show
+    "A wife",
+    "A mother of 4",
+    "A year-round homeschool mom",
+    "A pet foster mom",
+    "A student at Bellevue University",
+    "A future web developer"
+
+  ],
+  delay: 100,
+  blockDelay: 800,
+
+  timer: null, // Used to hold the timer
+  pointer: 0, // text position
+  block: 0, // block of text
+  draw: function() {
+    tw.pointer++;
+    tw.container.innerHTML = tw.text[tw.block].substring(0, tw.pointer);
+    if (tw.pointer < tw.text[tw.block].length) {
+      tw.timer = setTimeout(tw.draw, tw.delay);
+    }
+
+    // End of block
+    else {
+      tw.block++;
+      if (tw.text[tw.block] == undefined) {
+        tw.block = 0;
+      }
+      tw.timer = setTimeout(tw.reset, tw.blockDelay);
+    }
+  },
+  reset: function() {
+    tw.pointer = 0;
+    tw.container.innerHTML = "";
+    tw.timer = setTimeout(tw.draw, tw.delay);
+  }
+};
+
+window.addEventListener("load", function() {
+  tw.container = document.getElementById(tw.container);
+  tw.draw();
+});
+
+
+// READ MORE BUTTON
+function readmore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
   }
 }
