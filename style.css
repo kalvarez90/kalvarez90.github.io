@@ -13,7 +13,6 @@ body {
 /* NAVBAR */
 .NavBar {
   font-family: 'Josefin Sans', Arial, Verdana, sans-serif;
-  ;
   color: #e8e9f3;
 }
 
@@ -22,18 +21,62 @@ body {
 }
 
 /* HEADER */
-#header {
+.header {
   font-size: 6.5vw;
   font-family: 'Paytone One', Arial, Verdana, sans-serif;
   padding-left: 30px;
 }
 
-#picture {
-  opacity: 0.7;
+#Picture {
+  opacity: 0.8;
 }
 
 #project {
   background-color: rgba(91, 151, 154, 0.7);
+}
+
+/* PROJECT SECTION */
+
+.bodyText {
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create three equal columns */
+.column {
+  flex: 30.33%;
+  margin: 5px;
+  background-color: white;
+}
+
+.moreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+#myBtn {
+  font-family: 'Josefin Sans', Arial, Verdana, sans-serif;
+  background-color: #12130f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* SECTIONS OF PAGE CONTENT */
@@ -103,8 +146,14 @@ input[type=submit] {
   font-weight: 500;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #cursor {
     font-size: medium;
+  }
+  .row {
+    flex-direction: column;
+  }
+  #myProjects {
+    margin: 30px;
   }
 }

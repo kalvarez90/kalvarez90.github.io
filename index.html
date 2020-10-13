@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Paytone+One&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
-   ]<script src="https://kit.fontawesome.com/c75f123cd2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c75f123cd2.js" crossorigin="anonymous"></script>
 
     <!-- CSS File-->
     <link href="style.css" type="text/css" rel="stylesheet">
@@ -40,10 +40,9 @@
 
   <body>
     <!-- Navigation Bar -->
-
     <div class="NavBar w3-top" id="navigation">
       <div class="w3-bar w3-card">
-        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fas fa-home"></i> HOME</a>
         <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fas fa-user"></i> ABOUT</a>
         <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fas fa-th"></i> PROJECTS</a>
@@ -58,8 +57,8 @@
     <div class="NavBar" id="navBar">
       <div id="navB" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
         <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-user"></i> ABOUT</a>
-        <a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-th"></i> PROJECT</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#project" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fas fa-th"></i> PROJECT</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fas fa-envelope"></i> CONTACT</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large  w3-disabled" onclick="myFunction()"><i class="fas fa-project-diagram"></i> DIAGRAMS</a>
       </div>
     </div>
@@ -69,15 +68,15 @@
 
       <!-- HEADER -->
       <div class="w3-center w3-display-container">
-        <img src="images/IMAGE1.jpg" alt="Header Image" style="width:100%" id="picture">
-        <div class="w3-display-left w3-container w3-wide" id="typewriterHeader">
-          <h1 id="header">Karina Alvarez</h1>
+        <img src="images/IMAGE1.jpg" alt="fake image" style="width:100%" id="Picture">
+        <div class=" w3-display-left" id="typewriterHeader">
+          <h1 class="header">Karina Alvarez</h1>
           <span id="typewriterSub"></span><span id="cursor">|</span>
         </div>
       </div>
 
 
-      <!-- ABOUT ME SECTION -->
+       <!-- ABOUT ME SECTION -->
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
         <h2 class="w3-wide" id="aboutTitle"><b>ABOUT ME</b></h2>
         <p class="w3-justify" id="aboutPar">I'm a stay-at-home mom of four children between the ages of 12 to 1 year old.
@@ -101,85 +100,83 @@
 
       <!-- PROJECT SECTION -->
       <div id="project">
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <div class="w3-content w3-padding-64" style="max-width:800px" >
 
           <h2 class="w3-wide w3-center" id="projTitle"><b>PROJECTS</b></h2>
           <p class="w3-opacity w3-center" id="projPar"><i>Repositories created while studying at Bellevue University</i></p><br>
 
-          <div class="w3-row-padding w3-padding-32" style="margin:0 -16px" id="myProjects">
+          <div class="w3-row w3-row-padding w3-padding-32" id="myProjects">
 
-            <div class="w3-third w3-margin-bottom">
-              <img src="images/IMAGE6.jpg" alt="Screenshot of Biosite" style="width:100%">
-              <div class="w3-container w3-white">
-                <p><b>Biosite</b></p>
-                <p class="w3-opacity">WEB 200</p>
+            <div class="row">
+              <div class="column" id="colProj">
+                <img src="images/IMAGE6.jpg" alt="Screenshot of Biosite" style="width:100%"><br>
+                <div class="bodyText">
+                <h4><b>Biosite</b></h4>
+                <p style="opacity: 50%;">WEB 200</p>
                 <p>Webpage created for Web 200 where I needed to interview someone and create a site about them. </p>
-                <a class="w3-button w3-padding-small" href="https://kalvarez90.github.io/bioSite/" target="_blank">View Biosite</a>
-                <a class="w3-button w3-padding-small" href="https://www.github.com/kalvarez90/bioSite" target="_blank">View Biosite Repository</a>
-                <a class="w3-button w3-padding-small w3-margin-bottom" href="./images/bioSite.pdf" target="_blank">View Prototype</a>
+                <a class="w3-button w3-padding-small" href="https://kalvarez90.github.io/bioSite/" target="_blank" style="margin: 5px;">View Webpage</a>
+                <a class="w3-button w3-padding-small" href="https://kalvarez90.github.io/bioSite/" target="_blank" style="margin: 5px;">View Webpage</a>
+                <a class="w3-button w3-padding-small" href="./images/bioSite.pdf" target="_blank" style="margin: 5px;">View Prototype</a>
+                </div>
               </div>
-            </div>
 
-            <div class="w3-third w3-margin-bottom">
-              <img src="images/IMAGE7.jpg" alt="Screenshot of repository" style="width:100%">
-              <div class="w3-container w3-white">
-                <p><b>Personal Portfolio Repository</b></p>
-                <p class="w3-opacity">Started in WEB 201</p>
-                <p>Personal portfolio repository started on Web 201. I'm currently working on this portfolio for Web 330.
-                  I'll add more content in future courses.</p>
-                <a class="w3-button w3-margin-bottom w3-padding-small" href="https://www.github.com/kalvarez90/kalvarez90.github.io" target="_blank">View Project</a>
+              <div class="column" id="colProj">
+                <img src="images/IMAGE7.jpg" alt="Screenshot of Biosite" style="width:100%"><br>
+                <div class="bodyText">
+                <h4><b>Personal Portfolio</b></h4>
+                <p style="opacity: 50%;">WEB 201</p>
+                <p>Personal portfolio repository started on Web 201. More content will be added with every class. </p>
+                  <a class="w3-button w3-margin-bottom w3-padding-small" href="https://www.github.com/kalvarez90/kalvarez90.github.io" target="_blank">View Repository</a>
+                  <a class="w3-button w3-margin-bottom w3-padding-small" href="./images/portfolio.pdf" target="_blank">View Prototype</a>
+                </div>
               </div>
-            </div>
 
-            <div class="w3-third w3-margin-bottom">
-              <img src="images/IMAGE8.jpg" alt="Screenshot of repository" style="width:100%">
-              <div class="w3-container w3-white">
-                <p><b>Class Repository</b></p>
-                <p class="w3-opacity">WEB 231</p>
+              <div class="column" id="colProj">
+                <img src="images/IMAGE8.jpg" alt="Screenshot of Biosite" style="width:100%"><br>
+                <div class="bodyText">
+                <h4><b>Class Repository</b></h4>
+                <p style="opacity: 50%;">WEB 231</p>
                 <p>Class repository created for Web 231 - Enterprise JavaScript I.
-                  This class was an introduction to JavaScript. We also learned
-                  how to use DevTools.
-                </p>
-                <a class="w3-button w3-margin-bottom w3-padding-small" href="https://www.github.com/kalvarez90/web-231" target="_blank">View Project</a>
+                  This class was an introduction to JavaScript.</p>
+                  <a class="w3-button w3-margin-bottom w3-padding-small" href="https://www.github.com/kalvarez90/web-231" target="_blank">View Repository</a>
+                </div>
               </div>
-            </div>
 
-            <div class="w3-third w3-margin-bottom">
-              <img src="images/IMAGE9.jpg" alt="Screenshot of repository" style="width:100%">
-              <div class="w3-container w3-white">
-                <p><b>Class Repository</b></p>
-                <p class="w3-opacity">WEB 330</p>
-                <p>Class repository created for Web 330 - Enterprise JavaScript II. I'm currently taking this class
-                  and we are focusing in advanced JavaScript.
-                </p>
-                <a class="w3-button w3-margin-bottom w3-padding-small" href="https://www.github.com/kalvarez90/web-330" target="_blank">View Project</a>
+              <div class="column" id="colProj">
+                <img src="images/IMAGE8.jpg" alt="Screenshot of Biosite" style="width:100%"><br>
+                <div class="bodyText">
+                <h4><b>Class Repository</b></h4>
+                <p style="opacity: 50%;">WEB 330</p>
+                <p>Class repository created for Web 330 - Enterprise JavaScript II.</p>
+                  <a class="w3-button w3-margin-bottom w3-padding-small" href="https://www.github.com/kalvarez90/web-330" target="_blank">View Repository</a>
+                </div>
               </div>
-            </div>
 
-            <div class="w3-third w3-margin-bottom  w3-disabled">
-              <img src="images/IMAGE9.jpg" alt="Future Repository" style="width:100%">
-              <div class="w3-container w3-white">
-                <p><b></b>Title</p>
-                <p class="w3-opacity">Definition</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Faucibus interdum.</p>
-                <a class="w3-button w3-margin-bottom w3-padding-small" href="" target="_blank">link</a>
+              <div class="column" id="colProj">
+                <img src="images/IMAGE8.jpg" alt="Screenshot of Biosite" style="width:100%"><br>
+                <div class="bodyText">
+                <h4><b>Group Project</b></h4>
+                <p style="opacity: 50%;">WEB 330</p>
+                <p>Class repository created for Web 330 - Enterprise JavaScript II. </p>
+                  <a class="w3-button w3-margin-bottom w3-padding-small" href="https://www.github.com/kalvarez90/jaw" target="_blank">View Repository</a>
+                </div>
               </div>
-            </div>
 
-            <div class="w3-third w3-margin-bottom  w3-disabled">
-              <img src="images/IMAGE9.jpg" alt="Future Repository" style="width:100%">
-              <div class="w3-container w3-white">
-                <p><b></b>Title</p>
-                <p class="w3-opacity">Definition</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Faucibus interdum. </p>
-                <a class="w3-button w3-margin-bottom w3-padding-small" href="" target="_blank">link</a>
+              <div class="column" id="colProj">
+                <img src="images/IMAGE8.jpg" alt="Screenshot of Biosite" style="width:100%"><br>
+                <div class="bodyText">
+                <h4><b>Class Repository</b></h4>
+                <p style="opacity: 50%;">WEB 340</p>
+                <p>Class repository created for Web 330 - Node.js. </p>
+                  <a class="w3-button w3-margin-bottom w3-padding-small" href="https://www.github.com/kalvarez90/web-340" target="_blank">View Repository</a>
+                </div>
               </div>
+
             </div>
 
           </div>
         </div>
+      </div>
       </div>
 
 
