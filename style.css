@@ -154,6 +154,6 @@ input[type=submit] {
     flex-direction: column;
   }
   #myProjects {
-    margin: 30px;
+    margin: 0 130px;
   }
 }
