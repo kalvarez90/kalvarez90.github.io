@@ -67,3 +67,15 @@ window.addEventListener("load", function() {
   tw.container = document.getElementById(tw.container);
   tw.draw();
 });
+
+//Load more button
+$(function(){
+  $("div.column").slice(0, 3).show(); // select the first three
+  $("#loadMore").click(function(e){ // click event for load more
+      e.preventDefault();
+      $("div.column:hidden").slice(0, 3).show(); // select next 3 hidden divs and show them
+      if($("div.column:hidden").length == 0){ // check if any hidden divs still exist
+          alert("No more columns to show"); // alert if there are none left
+      }
+  });
+});
