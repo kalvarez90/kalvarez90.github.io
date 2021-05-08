@@ -53,10 +53,11 @@ body {
 
 /* Create three equal columns */
 .column {
-  flex: 30.33%;
-  margin: 5px;
+  width: 24%;
+  margin: 3px;
   background-color: white;
   display: none;
+  font-size: 80%;
 }
 
 /* SECTIONS OF PAGE CONTENT */
